@@ -78,7 +78,7 @@ const browserSyncJob = () => {
 	watch(paths.IMG_WATCH, imageCompile);
 };
 
-const build = series(cleanBuild, parallel(sassCompile, htmlCompile, scriptsCompile, makeSprite, imageCompile));
+const build = series(cleanBuild, parallel(sassCompile, htmlCompile));
 
 exports.default = series(build, browserSyncJob);
 exports.serve = series(build, browserSyncJob);
