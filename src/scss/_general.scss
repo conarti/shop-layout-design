@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+
   color: $body-color;
   font-family: sans-serif;
 
@@ -7,4 +13,35 @@ body {
 
 a {
   color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-text-color;
+  font-weight: 500;
+}
+
+p {
+  color: $secondary-text-color;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+input[type="number"] {
+  /* stylelint-disable-next-line */
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* stylelint-disable-next-line */
+  -webkit-appearance: none;
 }
