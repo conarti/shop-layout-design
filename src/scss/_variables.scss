@@ -21,6 +21,8 @@ $body-bg: $dark;
 
 $font-family-base: "Montserrat", sans-serif;
 
+$focus-box-shadow-opacity: 25%;
+
 $layout-bg-1: $dark-1;
 $layout-bg-2: $dark-2;
 $layout-bg-3: $dark-3;
@@ -77,3 +79,12 @@ $card-spacer: 2rem;
 $card-spacer-x: $card-spacer;
 $card-spacer-y: $card-spacer;
 $card-title-spacer-y: $card-spacer / 1.5;
+
+$products-group-name-box-shadow: 0 0 0 0.2rem rgba($secondary-text-color, $focus-box-shadow-opacity);
+$products-group-name-text-color: $primary-text-color;
+$products-group-name-background: $layout-bg-1;
+$products-group-name-background-hover: $layout-bg-3;
+$products-group-name-background-active: $layout-bg-2;
+$products-group-name-spacer-x: $card-spacer-x;
+$products-group-name-spacer-y: $card-spacer-y / 2;
+$products-group-items-gutter: map-get($spacers, 2);

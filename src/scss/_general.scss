@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
+
+  font-family: $font-family-base;
 }
 
 body {
   margin: 0;
 
   color: $body-color;
-  font-family: $font-family-base;
 
   background-color: $body-bg;
 }

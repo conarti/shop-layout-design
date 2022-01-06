@@ -1,6 +1,9 @@
 .card {
   display: block;
 
+  color: $primary-text-color;
+  font-weight: 500;
+
   background-color: $card-background;
   border: 1px solid $border-color;
   border-radius: $border-radius;
@@ -15,5 +18,13 @@
     display: block;
     margin: 0;
     padding: $card-spacer-y $card-spacer-x;
+  }
+
+  &__text {
+    margin: 0 0 map-get($spacers, 1);
+
+    &--color-primary {
+      color: $primary-text-color;
+    }
   }
 }

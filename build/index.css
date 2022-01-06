@@ -7,12 +7,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   margin: 0;
   color: #c1c1c1;
-  font-family: "Montserrat", sans-serif;
   background-color: #121212;
 }
 
@@ -107,6 +107,8 @@ input::-webkit-inner-spin-button {
 
 .card {
   display: block;
+  color: #fff;
+  font-weight: 500;
   background-color: #171717;
   border: 1px solid #212121;
   border-radius: 1rem;
@@ -120,4 +122,65 @@ input::-webkit-inner-spin-button {
   display: block;
   margin: 0;
   padding: 2rem 2rem;
+}
+.card__text {
+  margin: 0 0 0.25rem;
+}
+.card__text--color-primary {
+  color: #fff;
+}
+
+.products-list__group-name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.17rem;
+  text-align: start;
+  background-color: #171717;
+  border: 1px solid #212121;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s, box-shadow 0.25s;
+}
+.products-list__group-name:hover {
+  background-color: #212121;
+}
+.products-list__group-name:focus {
+  box-shadow: 0 0 0 0.2rem rgba(193, 193, 193, 0.25);
+}
+.products-list__group-name--active {
+  margin: 0 0 0.5rem;
+  background-color: #1c1c1c;
+}
+.products-list__group {
+  margin-bottom: 0.5rem;
+}
+.products-list__group:last-child {
+  margin-bottom: 0;
+}
+.products-list__group-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .products-list__group-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .products-list__group-items {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .products-list__group-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.products-list__group-items--collapsed {
+  display: none;
 }
