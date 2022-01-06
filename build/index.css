@@ -1,0 +1,39 @@
+body {
+  color: #fefefe;
+  font-family: sans-serif;
+  background-color: #2e2e2e;
+}
+
+a {
+  color: #fefefe;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.h-100vh {
+  height: 100vh !important;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.logo {
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  text-align: center;
+}
+.logo__icon {
+  display: inline;
+  margin-right: 1rem;
+}
