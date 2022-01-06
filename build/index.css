@@ -98,11 +98,12 @@ input::-webkit-inner-spin-button {
 }
 .main-layout__aside {
   position: sticky;
-  top: 0;
+  top: 1rem;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   grid-column: 1/-1;
+  align-self: start;
 }
 @media (min-width: 992px) {
   .main-layout__aside {

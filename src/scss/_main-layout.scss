@@ -25,12 +25,13 @@
 
   &__aside {
     position: sticky;
-    top: 0;
+    top: map-get($spacers, 3);
 
     display: flex;
     flex-direction: column;
     row-gap: $aside-row-gutter;
     grid-column: 1 / -1;
+    align-self: start;
 
     @include media-breakpoint-up(lg) {
       grid-column: 8 / -1;
