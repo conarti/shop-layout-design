@@ -19,3 +19,4 @@ ignoreFiles:
   - '**/*.js'
   - '**/*.html'
   - './build/**/*'
+  - '**/*.md'
