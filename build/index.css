@@ -127,6 +127,15 @@ input::-webkit-inner-spin-button {
 .button--fill {
   width: 100%;
 }
+.button--icon {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 100%;
+}
+.button--icon > * {
+  vertical-align: sub;
+}
 .button--primary {
   color: #0d6efd;
   border: 1px solid #0d6efd;
@@ -259,4 +268,38 @@ input::-webkit-inner-spin-button {
 }
 .select:focus {
   box-shadow: 0 0 0 0.2rem rgba(193, 193, 193, 0.25);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table__footer {
+  color: #fff;
+  font-weight: 500;
+}
+.table__cell {
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  color: #c1c1c1;
+  text-align: center;
+}
+.table__cell:last-child {
+  padding-right: 0;
+}
+.table__cell:first-child {
+  text-align: start;
+}
+.table__cell--header {
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.table__cell--footer {
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.table__cell--text-end {
+  text-align: end;
 }

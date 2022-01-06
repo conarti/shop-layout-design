@@ -1,0 +1,42 @@
+.table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  &__footer {
+    color: $primary-text-color;
+    font-weight: 500;
+  }
+
+  &__cell {
+    padding-right: $table-col-spacer;
+    padding-bottom: $table-row-spacer;
+
+    color: $secondary-text-color;
+    text-align: center;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:first-child {
+      text-align: start;
+    }
+  }
+
+  &__cell--header {
+    color: $primary-text-color;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  &__cell--footer {
+    color: $primary-text-color;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  &__cell--text-end {
+    text-align: end;
+  }
+}

@@ -121,3 +121,6 @@ $select-focus-box-shadow: 0 0 0 0.2rem rgba($select-text-color, $focus-box-shado
 $select-padding-y: $input-padding-y;
 $select-padding-x: $input-padding-x;
 $select-transition: $input-transition;
+
+$table-row-spacer: map-get($spacers, 3);
+$table-col-spacer: map-get($spacers, 2);
