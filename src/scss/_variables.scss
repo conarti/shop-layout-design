@@ -1,2 +1,33 @@
-$body-bg: #2e2e2e;
-$body-color: #fefefe;
+/** COLORS **/
+$dark: #121212;
+$white: #fff;
+$light: #c1c1c1;
+$blue: #0d6efd;
+$pink: #ff007a;
+
+$dark-1: lighten($dark, 2);
+$dark-2: lighten($dark, 4);
+$dark-3: lighten($dark, 6);
+
+/** THEME **/
+$primary: $blue;
+$secondary: $light;
+
+$text-color: $white;
+$secondary-text-color: $secondary;
+
+$body-color: $secondary-text-color;
+$body-bg: $dark;
+
+$layout-1: $dark-1;
+$layout-2: $dark-2;
+$layout-3: $dark-3;
+
+/** FONT **/
+$font-size-base: 0.6rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
