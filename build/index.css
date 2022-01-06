@@ -54,9 +54,14 @@ input::-webkit-inner-spin-button {
 .main-layout {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 0.3333333333rem 1rem;
+  gap: 1rem 1rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  .main-layout {
+    padding: 1rem;
+  }
 }
 @media (min-width: 576px) {
   .main-layout {
@@ -166,7 +171,12 @@ input::-webkit-inner-spin-button {
 .card__body {
   display: block;
   margin: 0;
-  padding: 2rem 2rem;
+  padding: 1.3333333333rem 1.3333333333rem;
+}
+@media (min-width: 768px) {
+  .card__body {
+    padding: 2rem 2rem;
+  }
 }
 .card__text {
   margin: 0 0 1rem;

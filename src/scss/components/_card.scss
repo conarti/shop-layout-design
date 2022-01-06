@@ -17,7 +17,11 @@
   &__body {
     display: block;
     margin: 0;
-    padding: $card-spacer-y $card-spacer-x;
+    padding: ($card-spacer-y / 1.5) ($card-spacer-x / 1.5);
+
+    @include media-breakpoint-up(md) {
+      padding: $card-spacer-y $card-spacer-x;
+    }
   }
 
   &__text {

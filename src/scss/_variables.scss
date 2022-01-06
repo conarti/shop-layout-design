@@ -52,7 +52,7 @@ $layout-max-widths: (
 $layout-columns: 12;
 $layout-gutter: map-get($spacers, 3);
 $layout-column-gutter: $layout-gutter;
-$layout-row-gutter: $layout-gutter / 3;
+$layout-row-gutter: $layout-gutter;
 $layout-breakpoints: (
   xs: 0,
   sm: 576px,

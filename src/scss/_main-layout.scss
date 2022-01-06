@@ -3,7 +3,11 @@
   grid-template-columns: repeat($layout-columns, 1fr);
   gap: $layout-row-gutter $layout-column-gutter;
   margin: 0 auto;
-  padding: map-get($spacers, 3);
+  padding: map-get($spacers, 2);
+
+  @include media-breakpoint-up(md) {
+    padding: map-get($spacers, 3);
+  }
 
   @each $breakpoint, $max-width in $layout-max-widths {
     @include media-breakpoint-up($breakpoint) {
