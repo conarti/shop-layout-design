@@ -1,7 +1,14 @@
 /** COLORS **/
 /** THEME **/
+/** SPACERS **/
+/** LAYOUT **/
 /** FONT **/
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   color: #c1c1c1;
   font-family: sans-serif;
   background-color: #121212;
@@ -9,4 +16,86 @@ body {
 
 a {
   color: #c1c1c1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: 500;
+}
+
+p {
+  color: #c1c1c1;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+input[type=number] {
+  /* stylelint-disable-next-line */
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* stylelint-disable-next-line */
+  -webkit-appearance: none;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.3333333333rem 0.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+@media (min-width: 576px) {
+  .main-layout {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .main-layout {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .main-layout {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-layout {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .main-layout {
+    max-width: 1320px;
+  }
+}
+.main-layout__main {
+  grid-column: 1/-1;
+}
+@media (min-width: 992px) {
+  .main-layout__main {
+    grid-column: 1/7;
+  }
+}
+.main-layout__aside {
+  position: sticky;
+  top: 0;
+  grid-column: 1/-1;
+}
+@media (min-width: 992px) {
+  .main-layout__aside {
+    grid-column: 8/12;
+  }
 }

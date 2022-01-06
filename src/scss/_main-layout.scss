@@ -1,0 +1,32 @@
+.main-layout {
+  display: grid;
+  grid-template-columns: repeat($layout-columns, 1fr);
+  gap: $layout-row-gutter $layout-column-gutter;
+  margin: 0 auto;
+  padding: map-get($spacers, 3);
+
+  @each $breakpoint, $max-width in $layout-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $max-width;
+    }
+  }
+
+  &__main {
+    grid-column: 1 / -1;
+
+    @include media-breakpoint-up(lg) {
+      grid-column: 1 / 7;
+    }
+  }
+
+  &__aside {
+    position: sticky;
+    top: 0;
+
+    grid-column: 1 / -1;
+
+    @include media-breakpoint-up(lg) {
+      grid-column: 8 / 12;
+    }
+  }
+}

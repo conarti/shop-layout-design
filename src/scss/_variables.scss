@@ -19,9 +19,41 @@ $secondary-text-color: $secondary;
 $body-color: $secondary-text-color;
 $body-bg: $dark;
 
-$layout-1: $dark-1;
-$layout-2: $dark-2;
-$layout-3: $dark-3;
+$layout-1-bg: $dark-1;
+$layout-2-bg: $dark-2;
+$layout-3-bg: $dark-3;
+
+/** SPACERS **/
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+/** LAYOUT **/
+$layout-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+$layout-columns: 12;
+$layout-gutter: map-get($spacers, 3);
+$layout-column-gutter: $layout-gutter / 2;
+$layout-row-gutter: $layout-gutter / 3;
+$layout-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 /** FONT **/
 $font-size-base: 0.6rem;
