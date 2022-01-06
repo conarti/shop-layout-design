@@ -21,7 +21,7 @@
   }
 
   &__text {
-    margin: 0 0 map-get($spacers, 1);
+    margin: 0 0 map-get($spacers, 3);
 
     &--color-primary {
       color: $primary-text-color;

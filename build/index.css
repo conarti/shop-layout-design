@@ -105,6 +105,51 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.button {
+  display: inline-block;
+  padding: 0.85rem 2.125rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+  font-family: Montserrat, sans-serif;
+  word-spacing: 0.5em;
+  background-color: transparent;
+  border: none;
+  border-radius: 50rem;
+  cursor: pointer;
+  transition: background-color 0.25s, opacity 0.25s, box-shadow 0.15s ease-in-out;
+}
+.button--fill {
+  width: 100%;
+}
+.button--primary {
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+}
+.button--primary:hover {
+  opacity: 0.85;
+}
+.button--primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+.button--primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.button--pink {
+  color: #ff007a;
+  border: 1px solid #ff007a;
+}
+.button--pink:hover {
+  opacity: 0.85;
+}
+.button--pink:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 122, 0.25);
+}
+.button--pink:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 .card {
   display: block;
   color: #fff;
@@ -124,7 +169,7 @@ input::-webkit-inner-spin-button {
   padding: 2rem 2rem;
 }
 .card__text {
-  margin: 0 0 0.25rem;
+  margin: 0 0 1rem;
 }
 .card__text--color-primary {
   color: #fff;
