@@ -3,6 +3,7 @@
 /** SPACERS **/
 /** LAYOUT **/
 /** FONT **/
+/** COMPONENTS **/
 * {
   box-sizing: border-box;
 }
@@ -92,10 +93,30 @@ input::-webkit-inner-spin-button {
 .main-layout__aside {
   position: sticky;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   grid-column: 1/-1;
 }
 @media (min-width: 992px) {
   .main-layout__aside {
-    grid-column: 8/12;
+    grid-column: 7/12;
   }
+}
+
+.card {
+  display: block;
+  background-color: #171717;
+  border: 1px solid #212121;
+  border-radius: 1rem;
+}
+.card__title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1.3333333333rem;
+}
+.card__body {
+  display: block;
+  margin: 0;
+  padding: 2rem 2rem;
 }

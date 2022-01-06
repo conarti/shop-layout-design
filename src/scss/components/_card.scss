@@ -1,0 +1,19 @@
+.card {
+  display: block;
+
+  background-color: $card-background;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  &__title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: $card-title-spacer-y;
+  }
+
+  &__body {
+    display: block;
+    margin: 0;
+    padding: $card-spacer-y $card-spacer-x;
+  }
+}
