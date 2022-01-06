@@ -103,3 +103,21 @@ $products-group-name-background-active: $layout-bg-2;
 $products-group-name-spacer-x: $card-spacer-x;
 $products-group-name-spacer-y: $card-spacer-y / 2;
 $products-group-items-gutter: map-get($spacers, 2);
+
+$input-font-size: $btn-font-size;
+$input-border-radius: $btn-border-radius;
+$input-background: $layout-bg-2;
+$input-text-color: $secondary-text-color;
+$input-padding-y: $input-font-size / 2;
+$input-padding-x: $input-padding-y * 2;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba($input-text-color, $focus-box-shadow-opacity);
+$input-transition: box-shadow 0.15s ease-in-out;
+
+$select-background: $layout-bg-2;
+$select-border-radius: $btn-border-radius;
+$select-font-size: $input-font-size;
+$select-text-color: $secondary-text-color;
+$select-focus-box-shadow: 0 0 0 0.2rem rgba($select-text-color, $focus-box-shadow-opacity);
+$select-padding-y: $input-padding-y;
+$select-padding-x: $input-padding-x;
+$select-transition: $input-transition;
