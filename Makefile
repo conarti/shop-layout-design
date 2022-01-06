@@ -16,6 +16,9 @@ sprite:
 build:
 	gulp build
 
+deploy:
+	npx surge ./build/
+
 setup: install remove-git git-init
 
 lint:
