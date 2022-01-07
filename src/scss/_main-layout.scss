@@ -15,7 +15,14 @@
     }
   }
 
-  &__main {
+  &__shop {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat($layout-columns, 1fr);
+    gap: $layout-row-gutter $layout-column-gutter;
+  }
+
+  &__products {
     grid-column: 1 / -1;
 
     @include media-breakpoint-up(lg) {
@@ -23,9 +30,10 @@
     }
   }
 
-  &__aside {
+  &__cart {
     position: sticky;
     top: map-get($spacers, 3);
+    bottom: 0;
 
     display: flex;
     flex-direction: column;
@@ -36,5 +44,9 @@
     @include media-breakpoint-up(lg) {
       grid-column: 8 / -1;
     }
+  }
+
+  &__news {
+    grid-column: 1 / -1;
   }
 }
