@@ -16,8 +16,8 @@ sprite:
 build:
 	gulp build
 
-deploy:
-	npx surge ./build/
+deploy: build
+	npx surge ./build/ --domain shop-layout-design.surge.sh
 
 setup: install remove-git git-init
 
