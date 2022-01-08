@@ -14,4 +14,5 @@ jobs:
         with:
           node-version: '16.x'
       - run: make install
-      - run: make deploy
+      - run: make build
+      - run: npx surge ./build/ --domain {{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
