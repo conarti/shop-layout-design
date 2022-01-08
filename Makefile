@@ -23,3 +23,5 @@ setup: install remove-git git-init
 
 lint:
 	npx stylelint ./src/scss/**/*
+
+.PHONY: build
