@@ -313,3 +313,22 @@ input::-webkit-inner-spin-button {
 .table__cell--text-end {
   text-align: end;
 }
+
+.input {
+  padding: 0.425rem 0.85rem;
+  color: #c1c1c1;
+  font-size: 0.85rem;
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 50rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(193, 193, 193, 0.25);
+}
+.input--maxw-50 {
+  max-width: 50px;
+}
+.input--text-center {
+  text-align: center;
+}

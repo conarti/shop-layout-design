@@ -1,0 +1,24 @@
+.input {
+  padding: $input-padding-y $input-padding-x;
+
+  color: $input-text-color;
+  font-size: $input-font-size;
+
+  background-color: $input-background;
+  border: none;
+  border-radius: $input-border-radius;
+
+  transition: $input-transition;
+
+  &:focus {
+    box-shadow: $input-focus-box-shadow;
+  }
+
+  &--maxw-50 {
+    max-width: 50px;
+  }
+
+  &--text-center {
+    text-align: center;
+  }
+}
